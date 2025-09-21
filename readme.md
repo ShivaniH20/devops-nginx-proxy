@@ -10,13 +10,12 @@ The reverse proxy routes traffic to the appropriate backend service, making both
 
 ---
 
-## 📌 Requirements  
-
-1. **Two Dockerized backend services** (dummy services are fine) running on different ports.  
-2. An **Nginx reverse proxy container** that routes traffic:  
-   - `/service1` → Backend Service 1  
-   - `/service2` → Backend Service 2  
-3. All services accessible via a **single exposed port** (e.g., `http://localhost:8080`).  
+## 📌 Requirements
+- Two Dockerized backend services (dummy services are fine) running on different ports.  
+- An Nginx reverse proxy container that routes traffic:  
+  - `/service1` → Backend Service 1  
+  - `/service2` → Backend Service 2  
+- All services accessible via a single exposed port (e.g., `http://localhost:8080`).  
 
 ---
 
@@ -36,13 +35,18 @@ The reverse proxy routes traffic to the appropriate backend service, making both
 │   └── Dockerfile
 └── README.md
 
-⚙️ How to Run
 
+---
 
-git clone <your-repo-link>
-cd <project-folder>
+## ⚙️ How to Run
+
+```bash
+git clone https://github.com/ShivaniH20/devops-nginx-proxy.git
+cd devops-nginx-proxy
 
 docker-compose up --build
+
+---
 
 ✅ Summary
 
