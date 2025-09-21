@@ -11,27 +11,6 @@ You are expected to set up a simple system where:
 
 ---
 
-### ✅ **Requirements**
-
-1. Use Docker Compose to bring up the entire system.
-2. Each backend service should respond with a JSON payload like:
-
-   ```json
-   {"service": "service1"}
-   ```
-3. The Nginx config should support:
-
-   * Routing based on URL path prefix (`/service1`, `/service2`)
-   * Logging incoming requests with timestamp and path
-4. The system should work with a single command:
-
-   ```bash
-   docker-compose up --build
-   ```
-5. Bonus: Add a health check for both services and show logs of successful routing.
-
----
-
 ### 📁 Suggested Project Structure
 
 ```
@@ -50,30 +29,4 @@ You are expected to set up a simple system where:
 ```
 
 ---
-
-### 📦 Tech Constraints
-
-* Nginx must run in a Docker container, not on host
-* Use bridge networking (no host networking)
-
----
-
-### 📝 Submission Instructions
-
-1. Upload your project to GitHub or GitLab.
-2. Include a short `README.md` with:
-
-   * Setup instructions
-   * How routing works
-   * Any bonus you implemented
-3. Deadline: **1 week**
-4. Bonus points for:
-
-   * Logging clarity
-   * Clean and modular Docker setup
-   * Healthcheck or automated test script
-
----
-
-
 
